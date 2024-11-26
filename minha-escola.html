@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais - Minha escola</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1>Relatório das redes sociais</h1>
+        <nav>
+            <a href="index.html">Mundo</a>
+            <a href="minha-escola.html">Minha escola</a>
+        </nav>
+    </header>
+    <main class="graficos-section">
+        <section id="graficos-container" class="graficos-container">
+            <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Redes Sociais na Minha Escola</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+        canvas {
+            max-width: 600px;
+            margin: 85px auto;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Redes Sociais</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Uso de Redes Sociais na Minha Escola</h1>
+    <button id="escolaButton" onclick="mostrarGraficoEscola()">Minha Escola</button>
+    <div style="max-width: 600px; margin: 20px auto;">
+        <canvas id="schoolSocialMediaChart" style="display: none;"></canvas>
+    </div>
+
+    <script>
+        function mostrarGraficoEscola() {
+            document.getElementById('schoolSocialMediaChart').style.display = 'block';
+
+            const ctx = document.getElementById('schoolSocialMediaChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Instagram', 'TikTok', 'WhatsApp', 'YouTube', 'Facebook', 'Outros'],
+                    datasets: [{
+                        label: 'Usuários (em %)',
+                        data: [35, 30, 20, 10, 3, 2], // Substitua pelos dados reais da sua escola
+                        backgroundColor: [
+                            'rgba(225, 48, 108, 0.7)', // Instagram
+                            'rgba(0, 128, 128, 0.7)',  // TikTok
+                            'rgba(37, 211, 102, 0.7)', // WhatsApp
+                            'rgba(255, 0, 0, 0.7)',    // YouTube
+                            'rgba(59, 89, 152, 0.7)',  // Facebook
+                            'rgba(128, 128, 128, 0.7)' // Outros
+                        ],
+                        borderColor: [
+                            'rgba(225, 48, 108, 1)',
+                            'rgba(0, 128, 128, 1)',
+                            'rgba(37, 211, 102, 1)',
+                            'rgba(255, 0, 0, 1)',
+                            'rgba(59, 89, 152, 1)',
+                            'rgba(128, 128, 128, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Uso de Redes Sociais na Escola (em %)'
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Alanys Cardoso</p>
+    </footer>
+    <script type="module" src="graficos/common.js"></script>
+    <script type="module" src="graficos/redesSociaisMinhaEscola.js"></script>
+</body>
+</html>
